@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+</head>
+<body>
+<p>CSS공부사이트 <a href='http://tcpschool.com/css/css_intro_apply' title='style sheet' target='_blank'>ㄱㄱ </a> </p>
+a {background-color:yellow; font-size:16px;}
+<!--html에 직접 사용하기 중복된 id는 자바에 악영향을 미침 되도록 사용 하지 말것-->
+<!--CSS 선택자는 총 4가지
+-HtML 요소
+-ID 한 파일에 한개만 쓰기로 약속
+-class 보통 이걸 많이 사용
+-group
+-->
+<style>
+    h2 {color:teal; text-decoration: underline;}
+</style>
+<h2>이 부분에 스타일을 적용합니다</h2>
+<style>
+    #heading { color:teal; text-decoration: line-through;}
+</style>
+<h2 id="heading">이 부분에 스타일을 적용합니다</h2>
+<h3 id="heading">나도 id heading값을 적용합니다</h3>
+<p id="heading">me too</p>
+<style>
+    .headings { color:lime; text-decoration:overline;}
+</style>
+<h2 class="headings">이 부분에 스타일을 적용합니다</h2>
+<p>class 선택자를 이용하여 스타일을 적용할 HTML 요소들을 한 번에 선택할 수 있습니다</p>
+<h3 class="headings">이 부분에도 같은 스타일을 적용합니다.</h3>
+<h3 class="headings">????</h3>
+<style>
+    h1 {color:red}
+    h1,h2 {text-align:center;}
+    h1,h2 {background-color:royalblue}
+</style>
+<!--아니 id랑 class둘다 쓰려면 똑같이 타이핑 계속해줘야 하는데 무슨 차이?-->
+<style>
+    p {color:red;/*이것은 한줄짜리 주석*/font-size:20px;}
+</style>
+<p>이것은 한줄짜리 주석</p>
+ 
+</body>
+
+
+</html>
